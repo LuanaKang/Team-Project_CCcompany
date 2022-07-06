@@ -1,0 +1,33 @@
+table tr:hover .paging_td:hover {
+    background: white; 
+}
+
+table tr:hover .write_td:hover {
+    background: white; 
+}
+
+.button{
+	margin-top:1.5%;
+	margin-left:0.5%;
+	border-radius: 5px;
+	border: 1px solid gray;
+	/* width: 4%; */
+	background-color: white;
+}
+
+.button2{
+  background-color: lightgray; 
+  color: black; 
+  border: 2px solid lightgray;
+  cursor: default;
+}
+
+.button2:hover{
+	cursor: default !important;
+}
+
+.list_tr:hover{
+	cursor: pointer !important;
+}
+#writebtn{
+}

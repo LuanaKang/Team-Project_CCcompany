@@ -1,0 +1,131 @@
+/* navbar */
+body {
+	padding-top: 56px;
+    margin: 0; /* 리셋을 하지 않은 경우 추가 */
+}
+	
+ .navbar-form {
+	 -webkit-flex-basis: 100%;
+	 -moz-flex-basis: 100%;
+	 -ms-flex-basis: 100%;
+	 -o-flex-basis: 100%;
+	 flex-basis: -moz-available;
+	 flex-basis: 100%;	
+ }
+ .input-group-search {
+	width: 100% !important;
+ }
+ @media(min-width:576px) {
+	 .navbar-expand-sm .input-group-search {
+		width: 100% !important; 
+	 }
+ }
+ @media(min-width:768px) {
+	 .navbar-expand-md .input-group-search {
+		width: 90% !important; 
+	 }
+ }
+ @media(min-width:992px) {
+	 .navbar-expand-lg .input-group-search {
+		width: 80% !important; 
+	 }
+	 /*body {
+		padding-top: 110px;
+	 }*/
+ }
+ @media(min-width:1200px) {
+	 .navbar-expand-xl .input-group-search {
+		width: 70% !important; 
+	 }
+ }
+/* navbar 끝 */
+
+
+/* category */
+
+
+:root {
+    /* set the sidebar width */
+    --sidebar-width: 10vw;
+}
+body {
+    overflow-x: hidden;
+    padding-top: 55px;
+}
+
+.w-sidebar {
+     width: var(--sidebar-width);
+    max-width: var(--sidebar-width);
+    /* top: 0; */
+   /*  z-index: 1060;  */
+}
+
+.row.collapse{
+    margin-left: calc(-1 * var(--sidebar-width));
+    left: 0;
+	transition: margin-left .15s linear;
+}  
+
+.row.collapse.show {
+    margin-left: 0 !important;
+}
+
+.row.collapsing {
+    margin-left: calc(-1 * var(--sidebar-width));
+    left: -0.05%;
+	transition: all .15s linear;
+}
+
+@media (max-width:768px) {
+
+    .row.collapse,
+    .row.collapsing {
+        margin-left: 0 !important;
+        left: 0 !important;
+        overflow: visible;
+    }
+    
+    .row > .sidebar.collapse {
+        display: flex !important;
+        margin-left: -100% !important;
+        transition: all .3s ease;
+        position: fixed;
+        z-index: 1050;
+        max-width: 0;
+        min-width: 0;
+        flex-basis: auto;
+    }
+    
+    .row > .sidebar.collapse.show {
+        margin-left: 0 !important;
+        width: 100%;
+        max-width: 100%;
+        min-width: initial;
+    }
+    
+    .row > .sidebar.collapsing {
+        display: flex !important;
+        margin-left: -10% !important;
+        transition: all .3s ease !important;
+        position: fixed;
+        z-index: 1050;
+        min-width: initial;
+    }
+    
+    
+/* category 끝 */
+
+/* footer */
+footer{
+   
+    height: 20px;
+
+   
+}
+}
+/* footer 끝 */
+
+#producttr:hover{
+	cursor: pointer;
+	background-color: #f0f0f0;
+}
